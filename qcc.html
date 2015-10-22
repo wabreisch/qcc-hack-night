@@ -1,0 +1,17 @@
+<head>
+  <title>QCC;</title>
+</head>
+
+<body>
+  <h1>QCC; Hack Night</h1>
+  <ul>
+    {{#each tasks}}
+      {{> task}}
+    {{/each}}
+  </ul>
+
+</body>
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
