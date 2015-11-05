@@ -5,13 +5,23 @@
 <body>
   <h1>QCC; Hack Night</h1>
   <ul>
-    {{#each tasks}}
-      {{> task}}
+    {{#each teams}}
+      {{> team}}
     {{/each}}
+    {{> input}}
   </ul>
 
 </body>
 
-<template name="task">
+<template name="team">
   <li>{{text}}</li>
+</template>
+
+<template name="input">
+  <div class="container" style="margin-top: 20px;">
+    <form>
+      <label for="textinput">Team Name: </label>
+      <input id="textinput" type="text" class="form-control">
+    </form>
+  </div>
 </template>
